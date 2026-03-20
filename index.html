@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Henry Nnamani — Backend Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;600;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-<style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Nnamani — Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;600;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet" />
+    <style>
 /* ── RESET & BASE ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
@@ -715,6 +717,29 @@ section { padding: 7rem 3rem; position: relative; }
 }
 .project-card:hover .project-arrow { color: var(--accent); transform: translate(3px,-3px); }
 
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.exp-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* ── CONTACT ── */
 #contact {
   background: var(--bg2);
@@ -1278,7 +1303,7 @@ footer {
   }
   nav.menu-open .nav-cta {
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem; 
     text-align: center;
     padding: 1rem;
   }
@@ -1401,403 +1426,573 @@ footer {
   .contact-bg-text { font-size: 5rem; }
 }
 </style>
-</head>
-<body>
+  </head>
+  <body>
 
-<!-- Custom cursor -->
-<div class="cursor" id="cursor"><div class="cursor-dot"></div></div>
-<div class="cursor-ring" id="cursorRing"></div>
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"><div class="cursor-dot"></div></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- Side socials -->
-<div class="side-socials">
-  <a href="https://github.com/henrynnamani" target="_blank" class="social-link">GitHub</a>
-  <a href="https://www.linkedin.com/in/henry-nnamani-a71b74287/" target="_blank" class="social-link">LinkedIn</a>
-  <a href="https://x.com/yrneeh" target="_blank" class="social-link">Twitter</a>
-</div>
-<div class="side-email">
-  <a href="mailto:henrynnamani12304@gmail.com">henrynnamani12304@gmail.com</a>
-</div>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">HN<span>.dev</span></a>
-  <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Hire Me</a>
-  <button class="nav-toggle" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-grid"></div>
-  <div class="hero-glow"></div>
-
-  <div class="hero-left">
-    <div class="hero-tag">Backend Engineer · Nigeria</div>
-    <h1 class="hero-name">
-      <span class="line1">Henry</span>
-      <span class="line2"><span class="accent-word">Nnamani</span></span>
-    </h1>
-    <p class="hero-role">Backend Engineer &amp; AI Engineer</p>
-    <p class="hero-desc">
-      I build the <strong>invisible machinery</strong> that powers great products — resilient APIs, distributed systems, and infrastructure that scales without drama.
-    </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    <!-- Side socials -->
+    <div class="side-socials">
+      <a href="https://github.com/henrynnamani" target="_blank"
+        class="social-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/henry-nnamani-a71b74287/"
+        target="_blank" class="social-link">LinkedIn</a>
+      <a href="https://x.com/yrneeh" target="_blank"
+        class="social-link">Twitter</a>
     </div>
-  </div>
+    <div class="side-email">
+      <a
+        href="mailto:henrynnamani12304@gmail.com">henrynnamani12304@gmail.com</a>
+    </div>
 
-  <div class="hero-right">
-    <div class="hero-terminal">
-      <div class="terminal-bar">
-        <div class="t-dot t-red"></div>
-        <div class="t-dot t-yellow"></div>
-        <div class="t-dot t-green"></div>
-        <span class="terminal-title">henry@server:~</span>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">HN<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-left">
+        <div class="hero-tag">Backend Engineer · Nigeria</div>
+        <h1 class="hero-name">
+          <span class="line1">Henry</span>
+          <span class="line2"><span class="accent-word">Nnamani</span></span>
+        </h1>
+        <p class="hero-role">Backend Engineer &amp; AI Engineer</p>
+        <p class="hero-desc">
+          I build the <strong>invisible machinery</strong> that powers great
+          products — resilient APIs, distributed systems, and infrastructure
+          that scales without drama.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
       </div>
-      <div class="terminal-body">
-        <div><span class="t-prompt">❯ </span><span class="t-cmd">cat profile.json</span></div>
-        <div>&nbsp;</div>
-        <div><span class="t-comment">{</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-string">"Henry Nnamani"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-string">"Backend Engineer"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-string">"Enugu, Nigeria 🇳🇬"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"Spring boot"</span>, <span class="t-string">"Node.js"</span>, <span class="t-string">"Python"</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"PostgreSQL"</span>, <span class="t-string">"Redis"</span>, <span class="t-string">"NestJs"</span></div>
-        <div>&nbsp;&nbsp;],</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"available"</span>: <span class="t-val">true</span></div>
-        <div><span class="t-comment">}</span></div>
-        <div>&nbsp;</div>
-        <div><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
-      </div>
-    </div>
-  </div>
 
-  <div class="hero-stats">
-    <div class="stat-item">
-      <div class="stat-num">4+</div>
-      <div class="stat-label">Years Experience</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">10+</div>
-      <div class="stat-label">Projects Shipped</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">95%</div>
-      <div class="stat-label">Uptime Target</div>
-    </div>
-  </div>
-</section>
+      <div class="hero-right">
+        <div class="hero-terminal">
+          <div class="terminal-bar">
+            <div class="t-dot t-red"></div>
+            <div class="t-dot t-yellow"></div>
+            <div class="t-dot t-green"></div>
+            <span class="terminal-title">henry@server:~</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">❯ </span><span class="t-cmd">cat
+                profile.json</span></div>
+            <div>&nbsp;</div>
+            <div><span class="t-comment">{</span></div>
+            <div>&nbsp;&nbsp;<span class="t-key">"name"</span>: <span
+                class="t-string">"Henry Nnamani"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"role"</span>: <span
+                class="t-string">"Backend Engineer"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span
+                class="t-string">"Enugu, Nigeria 🇳🇬"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="t-string">"Spring boot"</span>, <span
+                class="t-string">"Node.js"</span>, <span
+                class="t-string">"Python"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="t-string">"PostgreSQL"</span>, <span
+                class="t-string">"Redis"</span>, <span
+                class="t-string">"NestJs"</span></div>
+            <div>&nbsp;&nbsp;],</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"available"</span>: <span
+                class="t-val">true</span></div>
+            <div><span class="t-comment">}</span></div>
+            <div>&nbsp;</div>
+            <div><span class="t-prompt">❯ </span><span
+                class="t-cursor"></span></div>
+          </div>
+        </div>
+      </div>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="services-header reveal">
-    <div class="section-tag">What I Do</div>
-    <h2 class="section-title">Engineering that<br/>doesn't break.</h2>
-    <p class="section-sub">I build systems designed for scale, reliability, and the inevitable 3am incident that never comes.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <div class="service-num">01</div>
-      <span class="service-icon">⚙️</span>
-      <h3 class="service-title">Backend Development</h3>
-      <p class="service-desc">High-performance server-side applications built with clean architecture, proper separation of concerns, and code that junior devs can actually maintain.</p>
-      <div class="service-tags">
-        <span class="stag">Python</span><span class="stag">Nest.js</span><span class="stag">Spring Boot</span><span class="stag">ORM</span><span class="stag">GraphQL</span>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">Uptime Target</div>
+        </div>
       </div>
-    </div>
-    <div class="service-card reveal reveal-delay-1">
-      <div class="service-num">02</div>
-      <span class="service-icon">🔌</span>
-      <h3 class="service-title">API Design &amp; Integration</h3>
-      <p class="service-desc">Robust, versioned, and documented APIs that developers love to integrate. Built with security, rate limiting, and proper error handling from day one.</p>
-      <div class="service-tags">
-        <span class="stag">OpenAPI</span><span class="stag">Webhooks</span><span class="stag">OAuth</span><span class="stag">JWT</span>
-      </div>
-    </div>
-    <div class="service-card reveal reveal-delay-2">
-      <div class="service-num">03</div>
-      <span class="service-icon">🗄️</span>
-      <h3 class="service-title">Database Architecture</h3>
-      <p class="service-desc">Schema design, query optimization, and data modeling that keeps your app fast as you grow from 100 to 10 million records.</p>
-      <div class="service-tags">
-        <span class="stag">PostgreSQL</span><span class="stag">MongoDB</span><span class="stag">Redis</span><span class="stag">Migrations</span>
-      </div>
-    </div>
-    <div class="service-card reveal reveal-delay-3">
-      <div class="service-num">04</div>
-      <span class="service-icon">🐳</span>
-      <h3 class="service-title">DevOps &amp; Infrastructure</h3>
-      <p class="service-desc">Containerized deployments, CI/CD pipelines, and cloud infrastructure that lets your team ship with confidence, every single time.</p>
-      <div class="service-tags">
-        <span class="stag">Docker</span><span class="stag">GitHub Actions</span><span class="stag">AWS</span><span class="stag">Nginx</span>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-left reveal">
-    <div class="section-tag">About Me</div>
-    <h2 class="section-title">The engineer<br/>behind the stack.</h2>
-    <div class="about-text">
-      <p>I'm <strong>Henry Nnamani</strong>, a backend engineer based in <strong>Enugu, Nigeria</strong>. I've spent years building the kind of systems that quietly power great products — the ones nobody notices until they go down.</p>
-      <p>My obsession is <strong>reliability</strong>. Clean APIs, efficient queries, infrastructure that doesn't keep you up at night. I care deeply about code quality, developer experience, and writing systems that the next engineer (or future me) can actually understand.</p>
-    </div>
-    <div class="about-highlight">
-      <span class="hi-label">// currently</span>
-      Open to backend engineering roles &amp; freelance projects.<br/>
-      Trading enthusiast building tools with the HN Trade Journal.
-    </div>
-    <div class="about-meta">
-      <div class="meta-item"><div class="meta-label">Location</div><div class="meta-val">Enugu, Nigeria 🇳🇬</div></div>
-      <div class="meta-item"><div class="meta-label">Specialty</div><div class="meta-val">Backend & APIs</div></div>
-      <div class="meta-item"><div class="meta-label">Education</div><div class="meta-val">Computer Science</div></div>
-      <div class="meta-item"><div class="meta-label">Languages</div><div class="meta-val">English, French</div></div>
-      <div class="meta-item"><div class="meta-label">Outside work</div><div class="meta-val">Trading, Reading, Sleeping</div></div>
-      <div class="meta-item"><div class="meta-label">Status</div><div class="meta-val" style="color:var(--accent)">● Available</div></div>
-    </div>
-  </div>
-  <div class="about-right reveal reveal-delay-2">
-    <div class="about-img-container">
-      <div class="about-img-frame">
-        <div class="about-photo-placeholder">
-          <div class="placeholder-icon">👤</div>
-          <div class="placeholder-text">Your Photo Here<br/><span style="opacity:0.5;font-size:0.55rem">Replace with your actual photo</span></div>
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-header reveal">
+        <div class="section-tag">What I Do</div>
+        <h2 class="section-title">Engineering that<br />doesn't break.</h2>
+        <p class="section-sub">I build systems designed for scale, reliability,
+          and the inevitable 3am incident that never comes.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <span class="service-icon">⚙️</span>
+          <h3 class="service-title">Backend Development</h3>
+          <p class="service-desc">High-performance server-side applications
+            built with clean architecture, proper separation of concerns, and
+            code that junior devs can actually maintain.</p>
+          <div class="service-tags">
+            <span class="stag">Python</span><span
+              class="stag">Nest.js</span><span class="stag">Spring
+              Boot</span><span class="stag">ORM</span><span
+              class="stag">GraphQL</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">02</div>
+          <span class="service-icon">🔌</span>
+          <h3 class="service-title">API Design &amp; Integration</h3>
+          <p class="service-desc">Robust, versioned, and documented APIs that
+            developers love to integrate. Built with security, rate limiting,
+            and proper error handling from day one.</p>
+          <div class="service-tags">
+            <span class="stag">OpenAPI</span><span
+              class="stag">Webhooks</span><span class="stag">OAuth</span><span
+              class="stag">JWT</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">03</div>
+          <span class="service-icon">🗄️</span>
+          <h3 class="service-title">Database Architecture</h3>
+          <p class="service-desc">Schema design, query optimization, and data
+            modeling that keeps your app fast as you grow from 100 to 10 million
+            records.</p>
+          <div class="service-tags">
+            <span class="stag">PostgreSQL</span><span
+              class="stag">MongoDB</span><span class="stag">Redis</span><span
+              class="stag">Migrations</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-num">04</div>
+          <span class="service-icon">🐳</span>
+          <h3 class="service-title">DevOps &amp; Infrastructure</h3>
+          <p class="service-desc">Containerized deployments, CI/CD pipelines,
+            and cloud infrastructure that lets your team ship with confidence,
+            every single time.</p>
+          <div class="service-tags">
+            <span class="stag">Docker</span><span class="stag">GitHub
+              Actions</span><span class="stag">AWS</span><span
+              class="stag">Nginx</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-left reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">The engineer<br />behind the stack.</h2>
+        <div class="about-text">
+          <p>I'm <strong>Henry Nnamani</strong>, a backend engineer based in
+            <strong>Enugu, Nigeria</strong>. I've spent years building the kind
+            of systems that quietly power great products — the ones nobody
+            notices until they go down.</p>
+          <p>My obsession is <strong>reliability</strong>. Clean APIs, efficient
+            queries, infrastructure that doesn't keep you up at night. I care
+            deeply about code quality, developer experience, and writing systems
+            that the next engineer (or future me) can actually understand.</p>
+        </div>
+        <div class="about-highlight">
+          <span class="hi-label">// currently</span>
+          Open to backend engineering roles &amp; freelance projects.<br />
+          Trading enthusiast building tools with the HN Trade Journal.
+        </div>
+        <div class="about-meta">
+          <div class="meta-item"><div class="meta-label">Location</div><div
+              class="meta-val">Enugu, Nigeria 🇳🇬</div></div>
+          <div class="meta-item"><div class="meta-label">Specialty</div><div
+              class="meta-val">Backend & APIs</div></div>
+          <div class="meta-item"><div class="meta-label">Education</div><div
+              class="meta-val">Computer Science</div></div>
+          <div class="meta-item"><div class="meta-label">Languages</div><div
+              class="meta-val">English, French</div></div>
+          <div class="meta-item"><div class="meta-label">Outside work</div><div
+              class="meta-val">Trading, Reading, Sleeping</div></div>
+          <div class="meta-item"><div class="meta-label">Status</div><div
+              class="meta-val" style="color:var(--accent)">●
+              Available</div></div>
+        </div>
+      </div>
+      <div class="about-right reveal reveal-delay-2">
+        <div class="about-img-container">
+          <div class="about-img-frame">
+            <img src="https://avatars.githubusercontent.com/u/97439022?v=4" alt>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="reveal">
-    <div class="section-tag">Technical Skills</div>
-    <h2 class="section-title">My toolkit.</h2>
-    <p class="section-sub">Four years deep in the backend trenches. These are the tools I reach for first.</p>
-  </div>
-  <div class="skills-layout">
-    <div class="skills-nav reveal">
-      <button class="skill-cat-btn active" data-target="backend">Backend</button>
-      <button class="skill-cat-btn" data-target="databases">Databases</button>
-      <button class="skill-cat-btn" data-target="devops">DevOps</button>
-      <button class="skill-cat-btn" data-target="languages">Languages</button>
-      <button class="skill-cat-btn" data-target="soft">Soft Skills</button>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="reveal">
+      <div class="section-tag">Technical Skills</div>
+      <h2 class="section-title">My toolkit.</h2>
+      <p class="section-sub">Four years deep in the backend trenches. These are
+        the tools I reach for first.</p>
     </div>
-    <div class="skills-content reveal reveal-delay-2">
-      <div class="skill-group active" id="backend">
-        <div class="skill-group-title">Backend Engineering</div>
-        <div class="skill-bars">
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Nest.js / Express</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-pct="90"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Spring Boot / Spring Security / Spring Data JPA</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Python / FastAPI</span><span class="skill-pct">68%</span></div><div class="skill-track"><div class="skill-fill" data-pct="68"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">GraphQL</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-fill" data-pct="75"></div></div></div>
-        </div>
+    <div class="skills-layout">
+      <div class="skills-nav reveal">
+        <button class="skill-cat-btn active"
+          data-target="backend">Backend</button>
+        <button class="skill-cat-btn" data-target="databases">Databases</button>
+        <button class="skill-cat-btn" data-target="devops">DevOps</button>
+        <button class="skill-cat-btn" data-target="languages">Languages</button>
+        <button class="skill-cat-btn" data-target="soft">Soft Skills</button>
       </div>
-      <div class="skill-group" id="databases">
-        <div class="skill-group-title">Databases & Storage</div>
-        <div class="skill-bars">
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">PostgreSQL</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-pct="88"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">MongoDB</span><span class="skill-pct">82%</span></div><div class="skill-track"><div class="skill-fill" data-pct="82"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Redis / Caching</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Query Optimization</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">MySQL</span><span class="skill-pct">78%</span></div><div class="skill-track"><div class="skill-fill" data-pct="78"></div></div></div>
+      <div class="skills-content reveal reveal-delay-2">
+        <div class="skill-group active" id="backend">
+          <div class="skill-group-title">Backend Engineering</div>
+          <div class="skill-bars">
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Nest.js / Express</span><span
+                  class="skill-pct">90%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Spring Boot / Spring Security / Spring Data
+                  JPA</span><span class="skill-pct">85%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Python / FastAPI</span><span
+                  class="skill-pct">68%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="68"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">GraphQL</span><span
+                  class="skill-pct">75%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="75"></div></div></div>
+          </div>
         </div>
-      </div>
-      <div class="skill-group" id="devops">
-        <div class="skill-group-title">DevOps & Infrastructure</div>
-        <div class="skill-bars">
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Docker / Containers</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Linux / Shell</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-pct="88"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">CI/CD Pipelines</span><span class="skill-pct">78%</span></div><div class="skill-track"><div class="skill-fill" data-pct="78"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">AWS / Cloud</span><span class="skill-pct">72%</span></div><div class="skill-track"><div class="skill-fill" data-pct="72"></div></div></div>
-          <div class="skill-bar"><div class="skill-bar-header"><span class="skill-name">Nginx / Reverse Proxy</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-pct="80"></div></div></div>
+        <div class="skill-group" id="databases">
+          <div class="skill-group-title">Databases & Storage</div>
+          <div class="skill-bars">
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">PostgreSQL</span><span
+                  class="skill-pct">88%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="88"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">MongoDB</span><span
+                  class="skill-pct">82%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="82"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Redis / Caching</span><span
+                  class="skill-pct">80%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="80"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Query Optimization</span><span
+                  class="skill-pct">85%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">MySQL</span><span
+                  class="skill-pct">78%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="78"></div></div></div>
+          </div>
         </div>
-      </div>
-      <div class="skill-group" id="languages">
-        <div class="skill-group-title">Languages & Tools</div>
-        <div class="skill-tags-wrap">
-          <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Jenkin</span><span class="skill-tag">Bash</span><span class="skill-tag">SQL</span><span class="skill-tag">Git</span><span class="skill-tag">Postman</span><span class="skill-tag">VS Code</span><span class="skill-tag">Linux</span><span class="skill-tag">Swagger</span><span class="skill-tag">Jest</span>
+        <div class="skill-group" id="devops">
+          <div class="skill-group-title">DevOps & Infrastructure</div>
+          <div class="skill-bars">
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Docker / Containers</span><span
+                  class="skill-pct">85%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Linux / Shell</span><span
+                  class="skill-pct">88%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="88"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">CI/CD Pipelines</span><span
+                  class="skill-pct">78%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="78"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">AWS / Cloud</span><span
+                  class="skill-pct">72%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="72"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar-header"><span
+                  class="skill-name">Nginx / Reverse Proxy</span><span
+                  class="skill-pct">80%</span></div><div
+                class="skill-track"><div class="skill-fill"
+                  data-pct="80"></div></div></div>
+          </div>
         </div>
-      </div>
-      <div class="skill-group" id="soft">
-        <div class="skill-group-title">Soft Skills</div>
-        <div class="skill-tags-wrap">
-          <span class="skill-tag">Problem Solving</span><span class="skill-tag">System Design</span><span class="skill-tag">Code Review</span><span class="skill-tag">Team Collaboration</span><span class="skill-tag">Technical Writing</span><span class="skill-tag">Mentoring</span><span class="skill-tag">Agile</span><span class="skill-tag">Communication</span>
+        <div class="skill-group" id="languages">
+          <div class="skill-group-title">Languages & Tools</div>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Python</span><span
+              class="skill-tag">Java</span><span
+              class="skill-tag">TypeScript</span><span
+              class="skill-tag">Jenkin</span><span
+              class="skill-tag">Bash</span><span
+              class="skill-tag">SQL</span><span
+              class="skill-tag">Git</span><span
+              class="skill-tag">Postman</span><span class="skill-tag">VS
+              Code</span><span class="skill-tag">Linux</span><span
+              class="skill-tag">Swagger</span><span
+              class="skill-tag">Jest</span>
+          </div>
+        </div>
+        <div class="skill-group" id="soft">
+          <div class="skill-group-title">Soft Skills</div>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Problem Solving</span><span
+              class="skill-tag">System Design</span><span class="skill-tag">Code
+              Review</span><span class="skill-tag">Team
+              Collaboration</span><span class="skill-tag">Technical
+              Writing</span><span class="skill-tag">Mentoring</span><span
+              class="skill-tag">Agile</span><span
+              class="skill-tag">Communication</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
+  <!-- EXPERIENCE -->
 <section id="experience">
   <div class="reveal">
     <div class="section-tag">Experience</div>
-    <h2 class="section-title">Where I've<br/>shipped things.</h2>
+    <h2 class="section-title">Where I've<br />shipped things.</h2>
   </div>
+
   <div class="exp-grid">
     <div class="exp-timeline">
       <div class="exp-line"></div>
       <div class="exp-dot" style="top:0.8rem"></div>
-      <div class="exp-date" style="padding-top:0.5rem">2024 – Present</div>
-      <br/><br/><br/>
-      <div class="exp-dot" style="top:9rem"></div>
-      <div class="exp-date">2022 – 2024</div>
-      <br/><br/><br/>
-      <div class="exp-dot" style="top:18rem"></div>
-      <div class="exp-date">2020 – 2022</div>
+      <div class="exp-date" style="padding-top:0.5rem">2024 – 2025</div>
+      <br /><br /><br /><br />
+      <div class="exp-dot" style="top:10rem"></div>
+      <div class="exp-date">2025 – Present</div>
     </div>
+
     <div class="exp-items">
+
+      <!-- Anbu Gynaecare -->
       <div class="exp-item reveal">
-        <div class="exp-company">Freelance</div>
-        <div class="exp-role">Independent Backend Engineer</div>
-        <p class="exp-desc">Building backend systems, APIs, and infrastructure for clients across fintech, logistics, and SaaS. Delivering production-ready solutions with a focus on performance and maintainability.</p>
-        <div class="exp-tech"><span class="tech-pill">Python</span><span class="tech-pill">Node.js</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Docker</span><span class="tech-pill">AWS</span></div>
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">Anbu Gynaecare</div>
+            <div class="exp-role">Backend Engineer</div>
+          </div>
+          <a href="https://anbu-gynaecare.vercel.app/" target="_blank" rel="noopener noreferrer" class="exp-link">
+            Visit site ↗
+          </a>
+        </div>
+        <p class="exp-desc">
+          Contributed to an award-winning femtech startup building biodegradable menstrual pads —
+          <strong>grant winner at the Enugu Tech Hackathon</strong>.
+          Engineered the menstrual cycle prediction system using historical cycle data to deliver
+          personalized health insights for users. Built the end-to-end product sales and order
+          management feature, enabling customers to purchase biodegradable pads directly through
+          the platform.
+        </p>
+        <div class="exp-tech">
+          <span class="tech-pill">NestJs</span>
+          <span class="tech-pill">AWS</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">Next.Js</span>
+          <span class="tech-pill">TypeORM</span>
+        </div>
       </div>
+
+      <!-- TradeLog -->
       <div class="exp-item reveal reveal-delay-1">
-        <div class="exp-company">Tech Startup</div>
-        <div class="exp-role">Senior Backend Engineer</div>
-        <p class="exp-desc">Led API development for a fintech platform serving 50k+ users. Reduced query times by 60% through strategic indexing and caching. Built a real-time notification system handling 10k events/min.</p>
-        <div class="exp-tech"><span class="tech-pill">Node.js</span><span class="tech-pill">Redis</span><span class="tech-pill">MongoDB</span><span class="tech-pill">RabbitMQ</span></div>
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">TradeLog</div>
+            <div class="exp-role">Lead Backend Engineer</div>
+          </div>
+          <a href="https://tradelog-gilt.vercel.app/" target="_blank" rel="noopener noreferrer" class="exp-link">
+            Visit site ↗
+          </a>
+        </div>
+        <p class="exp-desc">
+          Leading the backend engineering team at a trade journaling platform built for active
+          traders. Architected and delivered core features including a trade overview engine
+          with parallel computation for real-time PnL analytics, win rate tracking, streak
+          detection, and drawdown analysis. Built the journal system, subscription management,
+          and chart upload infrastructure. Designed scalable REST APIs with a focus on
+          performance, maintainability, and clean architecture.
+        </p>
+        <div class="exp-tech">
+          <span class="tech-pill">Spring Boot</span>
+          <span class="tech-pill">Spring Security</span>
+          <span class="tech-pill">Spring Data JPA</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">AWS</span>
+          <span class="tech-pill">Redis</span>
+        </div>
       </div>
-      <div class="exp-item reveal reveal-delay-2">
-        <div class="exp-company">Software Agency</div>
-        <div class="exp-role">Backend Developer</div>
-        <p class="exp-desc">Developed RESTful APIs for 10+ client projects. Established code review practices and documentation standards that improved team velocity by 30%. Mentored 3 junior developers.</p>
-        <div class="exp-tech"><span class="tech-pill">Python</span><span class="tech-pill">Django</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Nginx</span></div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="reveal">
-    <div class="section-tag">Projects</div>
-    <h2 class="section-title">Things I've<br/>built.</h2>
-    <p class="section-sub">A selection of projects that kept me debugging at ungodly hours — all worth it.</p>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card reveal" data-project="0" role="button" tabindex="0">
-      <div class="project-num">01</div>
-      <div class="project-icon">📊</div>
-      <div class="project-arrow">↗</div>
-      <h3 class="project-title">TradeLog</h3>
-      <p class="project-desc">A full-featured trading journal app built with Next.js and Tailwind. Multi-account support, chart screenshot uploads, P&L analytics, and a mobile-first UI.</p>
-      <div class="project-stack"><span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind</span><span class="stack-tag">Spring Boot</span></div>
-    </div>
-    <div class="project-card reveal reveal-delay-1" data-project="1" role="button" tabindex="0">
-      <div class="project-num">02</div>
-      <div class="project-icon">🕯️</div>
-      <div class="project-arrow">↗</div>
-      <h3 class="project-title">Confessional</h3>
-      <p class="project-desc">An anonymous confessions platform where users can share thoughts freely. Built with real-time updates, moderation tools, and a clean distraction-free UI.</p>
-      <div class="project-stack"><span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind</span><span class="stack-tag">Spring Boot</span></div>
-    </div>
-  </div>
-</section>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="reveal">
+          <div class="section-tag">Projects</div>
+          <h2 class="section-title">Things I've<br />built.</h2>
+          <p class="section-sub">A selection of projects that kept me
+            debugging at ungodly hours — all worth it.</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal reveal-delay-1" data-project="1"
+            role="button" tabindex="0">
+            <div class="project-num">02</div>
+            <div class="project-icon">🕯️</div>
+            <div class="project-arrow">↗</div>
+            <h3 class="project-title">Confessional</h3>
+            <p class="project-desc">An anonymous confessions platform where
+              users can share thoughts freely. Built with real-time updates,
+              moderation tools, and a clean distraction-free UI.</p>
+            <div class="project-stack"><span
+                class="stack-tag">Next.js</span><span
+                class="stack-tag">TypeScript</span><span
+                class="stack-tag">Tailwind</span><span
+                class="stack-tag">Spring Boot</span></div>
+          </div>
+        </div>
+      </section>
 
-<!-- PROJECT DETAIL OVERLAY -->
-<div id="proj-overlay" role="dialog" aria-modal="true" aria-label="Project details">
-  <div class="proj-backdrop" id="projBackdrop"></div>
-  <div class="proj-panel" id="projPanel">
+      <!-- PROJECT DETAIL OVERLAY -->
+      <div id="proj-overlay" role="dialog" aria-modal="true"
+        aria-label="Project details">
+        <div class="proj-backdrop" id="projBackdrop"></div>
+        <div class="proj-panel" id="projPanel">
 
-    <!-- Sticky close bar -->
-    <div class="proj-close">
-      <span class="proj-close-label">// project details</span>
-      <button class="proj-close-btn" id="projCloseBtn" aria-label="Close">
-        <span>✕</span> Close
-      </button>
-    </div>
+          <!-- Sticky close bar -->
+          <div class="proj-close">
+            <span class="proj-close-label">// project details</span>
+            <button class="proj-close-btn" id="projCloseBtn"
+              aria-label="Close">
+              <span>✕</span> Close
+            </button>
+          </div>
 
-    <!-- Hero image -->
-    <div class="proj-hero" id="projHero">
-      <div class="proj-hero-placeholder" id="projHeroPlaceholder">
-        <div class="proj-hero-icon" id="projHeroIcon">📊</div>
+          <!-- Hero image -->
+          <div class="proj-hero" id="projHero">
+            <div class="proj-hero-placeholder" id="projHeroPlaceholder">
+              <div class="proj-hero-icon" id="projHeroIcon">📊</div>
+            </div>
+            <div class="proj-hero-gradient"></div>
+          </div>
+
+          <!-- Breadcrumb -->
+          <div class="proj-breadcrumb">
+            <a href="#projects" onclick="closeProjOverlay()">Projects</a>
+            <span>/</span>
+            <span id="projBreadTitle">—</span>
+          </div>
+
+          <!-- Body -->
+          <div class="proj-body">
+            <!-- Tags -->
+            <div class="proj-tags" id="projTags"></div>
+
+            <!-- Title -->
+            <h2 class="proj-title" id="projTitle"></h2>
+
+            <!-- Meta -->
+            <div class="proj-meta" id="projMeta"></div>
+
+            <!-- Overview -->
+            <div class="proj-section-label">Overview</div>
+            <div class="proj-text" id="projOverview"></div>
+
+            <!-- Challenge -->
+            <div class="proj-section-label">The Challenge</div>
+            <div class="proj-text" id="projChallenge"></div>
+
+            <!-- Solution highlight -->
+            <div class="proj-highlight" id="projHighlight"></div>
+
+            <!-- Tech Stack -->
+            <div class="proj-section-label">Tech Stack</div>
+            <div class="proj-stack-grid" id="projStack"></div>
+
+            <!-- Stats -->
+            <div class="proj-stats" id="projStats"></div>
+
+            <!-- Actions -->
+            <div class="proj-actions" id="projActions"></div>
+
+            <!-- Prev / Next -->
+            <div class="proj-nav" id="projNav"></div>
+          </div>
+        </div>
       </div>
-      <div class="proj-hero-gradient"></div>
-    </div>
 
-    <!-- Breadcrumb -->
-    <div class="proj-breadcrumb">
-      <a href="#projects" onclick="closeProjOverlay()">Projects</a>
-      <span>/</span>
-      <span id="projBreadTitle">—</span>
-    </div>
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact-bg-text">CONNECT</div>
+        <div class="contact-content reveal">
+          <div class="contact-label">// let's work together</div>
+          <h2 class="contact-heading">Got a project?<br />Let's <span
+              class="em">build it.</span></h2>
+          <p class="contact-sub">Whether it's an API that needs to handle a
+            million requests or a system that needs to not fall over at 2am —
+            I'm interested.</p>
+          <div class="contact-links">
+            <a href="mailto:henrynnamani00@gmail.com" class="contact-email">✉
+              Send Email</a>
+            <a href="https://linkedin.com" target="_blank"
+              class="contact-link">↗ LinkedIn</a>
+            <a href="https://github.com/henrynnamani" target="_blank"
+              class="contact-link">⌥ GitHub</a>
+            <a href="https://x.com/iam_graey" target="_blank"
+              class="contact-link">✦ Twitter</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Body -->
-    <div class="proj-body">
-      <!-- Tags -->
-      <div class="proj-tags" id="projTags"></div>
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-copy">© 2026 <span>Henry Nnamani</span> — Built
+          with caffeine &amp; conviction.</div>
+        <a href="#hero" class="footer-back">↑ Back to top</a>
+      </footer>
 
-      <!-- Title -->
-      <h2 class="proj-title" id="projTitle"></h2>
-
-      <!-- Meta -->
-      <div class="proj-meta" id="projMeta"></div>
-
-      <!-- Overview -->
-      <div class="proj-section-label">Overview</div>
-      <div class="proj-text" id="projOverview"></div>
-
-      <!-- Challenge -->
-      <div class="proj-section-label">The Challenge</div>
-      <div class="proj-text" id="projChallenge"></div>
-
-      <!-- Solution highlight -->
-      <div class="proj-highlight" id="projHighlight"></div>
-
-      <!-- Tech Stack -->
-      <div class="proj-section-label">Tech Stack</div>
-      <div class="proj-stack-grid" id="projStack"></div>
-
-      <!-- Stats -->
-      <div class="proj-stats" id="projStats"></div>
-
-      <!-- Actions -->
-      <div class="proj-actions" id="projActions"></div>
-
-      <!-- Prev / Next -->
-      <div class="proj-nav" id="projNav"></div>
-    </div>
-  </div>
-</div>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-bg-text">CONNECT</div>
-  <div class="contact-content reveal">
-    <div class="contact-label">// let's work together</div>
-    <h2 class="contact-heading">Got a project?<br/>Let's <span class="em">build it.</span></h2>
-    <p class="contact-sub">Whether it's an API that needs to handle a million requests or a system that needs to not fall over at 2am — I'm interested.</p>
-    <div class="contact-links">
-      <a href="mailto:henrynnamani00@gmail.com" class="contact-email">✉ Send Email</a>
-      <a href="https://linkedin.com" target="_blank" class="contact-link">↗ LinkedIn</a>
-      <a href="https://github.com/henrynnamani" target="_blank" class="contact-link">⌥ GitHub</a>
-      <a href="https://x.com/iam_graey" target="_blank" class="contact-link">✦ Twitter</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-copy">© 2026 <span>Henry Nnamani</span> — Built with caffeine &amp; conviction.</div>
-  <a href="#hero" class="footer-back">↑ Back to top</a>
-</footer>
-
-<script>
+      <script>
 /* ── PROJECT DATA ── */
 const PROJECTS = [
   {
@@ -2044,5 +2239,5 @@ const skillObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 skillObs.observe(skillsSection);
 </script>
-</body>
-</html>
+    </body>
+  </html>
