@@ -1876,22 +1876,49 @@ footer {
             debugging at ungodly hours — all worth it.</p>
         </div>
         <div class="projects-grid">
-          <div class="project-card reveal reveal-delay-1" data-project="1"
-            role="button" tabindex="0">
-            <div class="project-num">02</div>
-            <div class="project-icon">🕯️</div>
-            <div class="project-arrow">↗</div>
-            <h3 class="project-title">Confessional</h3>
-            <p class="project-desc">An anonymous confessions platform where
-              users can share thoughts freely. Built with real-time updates,
-              moderation tools, and a clean distraction-free UI.</p>
-            <div class="project-stack"><span
-                class="stack-tag">Next.js</span><span
-                class="stack-tag">TypeScript</span><span
-                class="stack-tag">Tailwind</span><span
-                class="stack-tag">Spring Boot</span></div>
-          </div>
-        </div>
+
+  <div class="project-card reveal reveal-delay-1" data-project="1" role="button" tabindex="0">
+    <div class="project-num">01</div>
+    <div class="project-icon">🕯️</div>
+    <a class="project-arrow" href="https://conf-ruby-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
+    <h3 class="project-title">Confessional</h3>
+    <p class="project-desc">An anonymous confession platform with six emotional categories — Confession, Regret, Obsession, Secret, Shame, Desire. No accounts. No names. Just honesty.</p>
+    <div class="project-stack">
+      <span class="stack-tag">Next.js</span>
+      <span class="stack-tag">TypeScript</span>
+      <span class="stack-tag">Tailwind CSS</span>
+    </div>
+  </div>
+
+  <div class="project-card reveal reveal-delay-2" data-project="2" role="button" tabindex="0">
+    <div class="project-num">02</div>
+    <div class="project-icon">🏠</div>
+    <a class="project-arrow" href="https://solomon-chi.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
+    <h3 class="project-title">LodgePay</h3>
+    <p class="project-desc">A sanitation billing portal for a 44-room lodge. Tenants self-register by floor and room, pay their monthly levy via PIN, and admins track collection in real time.</p>
+    <div class="project-stack">
+      <span class="stack-tag">HTML</span>
+      <span class="stack-tag">CSS</span>
+      <span class="stack-tag">Vanilla JS</span>
+      <span class="stack-tag">LocalStorage</span>
+    </div>
+  </div>
+
+  <div class="project-card reveal reveal-delay-3" data-project="3" role="button" tabindex="0">
+    <div class="project-num">03</div>
+    <div class="project-icon">🏠</div>
+    <a class="project-arrow" href="https://lodgee.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
+    <h3 class="project-title">Lodgee</h3>
+    <p class="project-desc">A verified campus housing marketplace for students in Nsukka and Enugu. Replaces WhatsApp chaos with filterable listings, transparent cost breakdowns, and direct agent contact.</p>
+    <div class="project-stack">
+      <span class="stack-tag">Next.js</span>
+      <span class="stack-tag">TypeScript</span>
+      <span class="stack-tag">Convex</span>
+      <span class="stack-tag">Cloudinary</span>
+    </div>
+  </div>
+
+</div>
       </section>
 
       <!-- PROJECT DETAIL OVERLAY -->
@@ -1996,69 +2023,53 @@ footer {
 /* ── PROJECT DATA ── */
 const PROJECTS = [
   {
-    id: 0,
-    icon: '📊',
-    title: 'HN Trade Journal',
-    tags: ['Next.js', 'Frontend', 'TypeScript', 'Personal Project'],
-    year: '2025',
-    role: 'Solo Developer',
-    type: 'Web Application',
-    duration: '3 months',
-    overview: `<p>HN Trade Journal is a professional-grade trading journal built to track, analyse, and improve trading performance across multiple accounts. Designed with a <strong>mobile-first approach</strong> and a dark industrial aesthetic that makes daily use a pleasure.</p><p>The app covers the full workflow: logging trades with before/after chart screenshots, running P&L analytics, viewing a monthly calendar of performance, and switching between Live, Prop Firm, and Demo accounts seamlessly.</p>`,
-    challenge: `<p>Most trading journals are either too simple (a spreadsheet) or too bloated (paid SaaS tools). The goal was to build something that felt like a premium product — fast, offline-capable, with no backend needed.</p><p>The image upload system was the trickiest part: handling drag-and-drop, base64 storage, and a full lightbox viewer while keeping localStorage usage under control for large chart screenshots.</p>`,
-    highlight: '<strong>Result →</strong> Full offline PWA-ready trading journal. Zero backend, zero subscriptions. All data lives on your device.',
-    stack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Recharts', 'LocalStorage', 'Lucide Icons', 'UUID'],
-    stats: [{ num: '30+', label: 'Components' }, { num: '0ms', label: 'API latency' }, { num: '100%', label: 'Offline' }],
-    links: [{ label: '↗ Live Demo', type: 'primary', href: '#' }, { label: '⌥ GitHub', type: 'secondary', href: '#' }],
-  },
+  id: 1,
+  icon: '🕯️',
+  title: 'Confessional',
+  tags: ['Next.js', 'Frontend', 'TypeScript', 'Tailwind CSS'],
+  year: '2025',
+  role: 'Solo Developer',
+  type: 'Web Application',
+  duration: '2 months',
+  overview: `<p>Confessional is an anonymous confession platform built for raw, unfiltered human expression. Designed with a <strong>dark noir aesthetic</strong> — grain overlays, italic serif typography, candlelit atmosphere — that makes every post feel like a secret passed through a slot in the wall.</p><p>The app supports six emotional categories (Confession, Regret, Obsession, Secret, Shame, Desire), threaded replies, and like interactions — all without accounts or identity.</p>`,
+  challenge: `<p>The core tension was building something that feels <em>intimate and unsafe</em> in the right way — where people feel free to be honest. Anonymous platforms easily become toxic; the design had to telegraph vulnerability and sincerity, not cruelty.</p><p>The aesthetic work was the hardest part: grain textures, vignetting, Playfair Display italics, and Special Elite typewriter font all had to cohere into something that felt like a confession booth, not a forum.</p>`,
+  highlight: '<strong>Result →</strong> A fully anonymous confession platform with category filtering, threaded replies, and likes. No accounts. No names. Just honesty.',
+  stack: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'LocalStorage', 'Playfair Display', 'Special Elite'],
+  stats: [{ num: '6', label: 'Categories' }, { num: '0', label: 'Accounts needed' }, { num: '100%', label: 'Anonymous' }],
+  links: [{ label: '↗ Live Demo', type: 'primary', href: 'https://conf-ruby-alpha.vercel.app/' }, { label: '⌥ GitHub', type: 'secondary', href: 'https://github.com/henrynnamani/conf' }],
+},
   {
-    id: 1,
-    icon: '🔐',
-    title: 'Auth Microservice',
-    tags: ['Backend', 'API Development', 'Micro-Service', 'Security'],
-    year: '2024',
-    role: 'Lead Backend Engineer',
-    type: 'Microservice',
-    duration: '6 weeks',
-    overview: `<p>A standalone, drop-in authentication microservice designed to be reused across multiple Node.js projects. Handles the full auth lifecycle — registration, login, token refresh, password reset, OAuth2 social login, and account management.</p><p>Built with <strong>security as a first-class concern</strong>: bcrypt hashing, short-lived JWTs, sliding refresh tokens stored in Redis, brute-force protection, and rate limiting on all auth endpoints.</p>`,
-    challenge: `<p>Every project was reinventing the auth wheel. The challenge was to build a service generic enough to drop into any project while still being configurable — different JWT secrets, expiry times, OAuth providers, and email templates per deployment.</p><p>The Redis session store needed to handle concurrent refresh token rotation safely, preventing race conditions that could lock out users on fast mobile connections.</p>`,
-    highlight: '<strong>Key metric →</strong> Eliminated 40+ hours of repeated auth boilerplate across 6 projects. One service, zero rework.',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'Docker', 'JWT', 'OAuth2', 'Nodemailer'],
-    stats: [{ num: '<50ms', label: 'Token verify' }, { num: '6', label: 'Projects using it' }, { num: '0', label: 'Auth bugs' }],
-    links: [{ label: '⌥ GitHub', type: 'primary', href: '#' }, { label: '↗ Docs', type: 'secondary', href: '#' }],
-  },
+  id: 2,
+  icon: '🏠',
+  title: 'LodgePay',
+  tags: ['Frontend', 'TypeScript', 'Vanilla JS', 'LocalStorage'],
+  year: '2024',
+  role: 'Solo Developer',
+  type: 'Web Application',
+  duration: '3 weeks',
+  overview: `<p>LodgePay is a sanitation billing portal for a residential lodge, built to replace manual cash collection with a clean self-service system. Tenants register by floor and room, set a 4-digit PIN, and pay their monthly ₦500 sanitation levy — all from their phone.</p><p>The admin dashboard gives a live view of collection status across all <strong>44 rooms</strong>: total collected, rooms paid vs pending, recent payment activity, and a countdown to the monthly deadline.</p>`,
+  challenge: `<p>The entire system runs without a backend — all state lives in LocalStorage, which meant designing a PIN-based auth flow and per-room payment tracking that felt secure and reliable without a real database.</p><p>The monthly deadline countdown and automatic status resets required careful date logic to ensure payments cleared correctly at month boundaries without wiping historical data.</p>`,
+  highlight: '<strong>Result →</strong> Replaced manual cash collection for 44 rooms. Tenants self-serve, admins get a live dashboard. Zero spreadsheets.',
+  stack: ['HTML', 'CSS', 'Vanilla JS', 'LocalStorage'],
+  stats: [{ num: '44', label: 'Rooms tracked' }, { num: '₦500', label: 'Monthly levy' }, { num: '0', label: 'Backend needed' }],
+  links: [{ label: '↗ Live Demo', type: 'primary', href: 'https://solomon-chi.vercel.app/' }, { label: '⌥ GitHub', type: 'secondary', href: '#' }],
+},
   {
-    id: 2,
-    icon: '📡',
-    title: 'Real-time API Gateway',
-    tags: ['Backend', 'API Development', 'Go', 'Infrastructure'],
-    year: '2024',
-    role: 'Backend Engineer',
-    type: 'Infrastructure',
-    duration: '8 weeks',
-    overview: `<p>A high-throughput API gateway written in Go, designed to sit in front of a microservices cluster. Handles request routing, load balancing, WebSocket proxying, authentication header injection, and per-service rate limiting.</p><p>Built observability in from day one — every request is traced with a unique request ID, and Prometheus metrics expose p95/p99 latency, error rates, and upstream health per route.</p>`,
-    challenge: `<p>The main challenge was WebSocket support: most gateway solutions treat WebSockets as an afterthought. This gateway needed to proxy long-lived WebSocket connections while still enforcing auth and rate limits on the initial handshake.</p><p>Circuit breaking was implemented with an exponential backoff strategy — when an upstream service degrades, the gateway fails fast and returns a cached response rather than letting latency cascade through the system.</p>`,
-    highlight: '<strong>Performance →</strong> Handles 50,000 req/s on a single $20/month VPS. Circuit breaker eliminated cascading failures entirely.',
-    stack: ['Go', 'Nginx', 'WebSockets', 'Prometheus', 'Grafana', 'Docker', 'Redis'],
-    stats: [{ num: '50k', label: 'req/s' }, { num: '<2ms', label: 'Overhead' }, { num: '99.9%', label: 'Uptime' }],
-    links: [{ label: '⌥ GitHub', type: 'primary', href: '#' }],
-  },
-  {
-    id: 3,
-    icon: '💹',
-    title: 'Fintech Data Pipeline',
-    tags: ['Backend', 'API Development', 'Python', 'Data Engineering'],
-    year: '2023',
-    role: 'Senior Backend Engineer',
-    type: 'Data Pipeline',
-    duration: '10 weeks',
-    overview: `<p>A real-time ETL pipeline processing financial transactions for a payment platform. Ingests raw transaction events from multiple sources, normalises them, applies business rules, enriches with third-party data, and writes to a reporting database.</p><p>Designed for <strong>exactly-once processing</strong> — idempotent processors mean a retried event never creates a duplicate transaction in the ledger, no matter how many times the network hiccups.</p>`,
-    challenge: `<p>The legacy system processed transactions synchronously — one at a time. At scale, this created a backlog during peak hours. The pipeline needed to handle bursts of 10,000+ events/minute while guaranteeing that every transaction was processed exactly once, in order, with a full audit trail.</p><p>Handling partial failures was the hardest part: if enrichment fails halfway through a batch, the pipeline needs to retry only the failed records — not the whole batch.</p>`,
-    highlight: '<strong>Impact →</strong> Reduced transaction processing time from 8 seconds to 340ms average. Zero duplicate transactions in 18 months of production.',
-    stack: ['Python', 'FastAPI', 'Celery', 'RabbitMQ', 'PostgreSQL', 'Redis', 'Docker', 'Flower'],
-    stats: [{ num: '340ms', label: 'Avg process time' }, { num: '10k+', label: 'Events/min' }, { num: '0', label: 'Duplicates' }],
-    links: [{ label: '⌥ GitHub', type: 'primary', href: '#' }, { label: '↗ Case Study', type: 'secondary', href: '#' }],
-  },
+  id: 3,
+  icon: '🏠',
+  title: 'Lodgee',
+  tags: ['Frontend', 'Next.js', 'TypeScript', 'Convex'],
+  year: '2024',
+  role: 'Solo Developer',
+  type: 'Web Application',
+  duration: '8 weeks',
+  overview: `<p>Lodgee is a campus housing marketplace for students in Nsukka and Enugu — a clean, fast alternative to chaotic WhatsApp groups and unverified agent listings. Students can search, filter, and contact agents for verified rooms directly.</p><p>Listings are filterable by room type, price, distance to school, amenities, availability, and agent. Every listing surfaces a <strong>full cost breakdown</strong>, inspection fee, agent profile, and a one-tap WhatsApp CTA — no accounts, no friction.</p>`,
+  challenge: `<p>The core problem was trust: students were getting scammed by unverified agents quoting one price and charging another at move-in. Lodgee fixes this by requiring agents to confirm full breakdowns — rent, agency fee, legal fee, and caution deposit — before a listing goes live.</p><p>Real-time data sync via Convex meant listings update live across all connected clients without polling, and the Cloudinary media pipeline handles room photo and video uploads with progress tracking and CDN delivery.</p>`,
+  highlight: '<strong>Result →</strong> A verified housing marketplace replacing WhatsApp chaos for campus students. Live listings, transparent pricing, direct agent contact.',
+  stack: ['Next.js 14', 'TypeScript', 'Convex', 'Tailwind CSS', 'Cloudinary', 'WhatsApp API'],
+  stats: [{ num: '44+', label: 'Listings' }, { num: '12', label: 'Active agents' }, { num: '₦80k–₦600k', label: 'Price range' }],
+  links: [{ label: '↗ Live Demo', type: 'primary', href: 'https://lodgee.vercel.app/' }, { label: '⌥ GitHub', type: 'secondary', href: 'https://github.com/henrynnamani/lodgee' }],
+},
 ];
 
 /* ── OVERLAY LOGIC ── */
